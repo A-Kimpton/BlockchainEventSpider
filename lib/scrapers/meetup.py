@@ -22,14 +22,6 @@ class MeetupScraper(WebScraper):
         :return:
         '''
 
-        page_item_general = {
-            'name': None,
-            'page-url': None,
-            'members': None,
-            'location': None,
-            'date': None
-        }
-
         page_items = {}
 
         # Get a handle on the events
@@ -37,15 +29,11 @@ class MeetupScraper(WebScraper):
 
         # extract all data I want
         for html_event in html_all_events:
-            page_item = page_item_general
-
             page_unique_key = html_event['data-chapterid']
-
-            page_item['name'] = html_event.div.a.text
-            page_item['page-url'] = html_event.div.a['href']
-
-            page_items[page_unique_key] = page_item
-
+            page_items[page_unique_key] = {
+                'name': html_event.div.a.text,
+                'url': html_event.div.a['href']
+            }
         return page_items
 
     def _has_page_changed(self, old_soup):

@@ -12,8 +12,6 @@ class DocHandler:
 
         client_secret_path = client_secret_path  # type: Path
 
-        print(client_secret_path)
-
         if not client_secret_path.exists():
             raise FileNotFoundError
 

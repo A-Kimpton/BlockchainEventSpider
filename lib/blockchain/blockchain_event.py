@@ -24,8 +24,7 @@ class BlockchainEvent:
     def all_data(self):
         return self._data
 
-    @property
-    def get(self, key):
+    def get_by_key(self, key):
         if key in self._keys:
             return self._data[key]
         return None

@@ -8,7 +8,7 @@ class BlockchainList:
     '''
     A class to hold records of blockchain events
     '''
-    def __init__(self, headings, blockchain_items_iter=None):
+    def __init__(self, headings):
         '''
 
         :param headings: list
@@ -33,7 +33,7 @@ class BlockchainList:
             return True
         return False
 
-    def build_spreadsheet(self):
+    def write_spreadsheet(self):
         pass
 
     @property

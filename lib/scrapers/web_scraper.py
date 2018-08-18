@@ -5,6 +5,10 @@ from lib.blockchain import BlockchainEvent
 
 
 class WebScraper:
+    '''
+    URLLIB should be swapped out in future for better way to request sites, as most sites dont liek the user agent from
+    url lib
+    '''
     def __init__(self, url):
 
         self._url = url
