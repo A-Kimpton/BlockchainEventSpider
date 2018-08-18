@@ -35,19 +35,6 @@ def get_scrapers():
     return scrapers
 
 
-def start_meetup(meetup_scraper, delay=1, updates=0):
-    while meetup_scraper.has_page_not_changed():
-        # Sleeps for delay seconds before pinging again
-        print('[Info] Page not changed! - Page changed {} times'.format(updates))
-        time.sleep(delay)
-
-    # Page has changed!
-    print('[Eureka] Page changed!')
-    print(meetup_scraper.get_blockchain_list())
-
-    # Start the tracker again
-    start_meetup(meetup_scraper, delay, updates+1)
-
 def get_doc_handler():
     '''
     Configures and returns a DocHandler obj
