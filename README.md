@@ -3,7 +3,7 @@ A really simple spider to pull info from a web page.
 
 This was a small project to experiment on using the google sheets api and webscraping. Do to the limitations of the frequency I can write to the sheets, im shelving this project.
 
-If you want to use this application, you'll need to obtain a client_secret.json from the google dev console. I also hard coded the name of the sheet I was working with 'Data' - so you'll need to change that for your sheet.
+If you want to use this application, you'll need to obtain a client_secret.json from the google dev console, and dump it in "ROOT/data/client_secret.json". I also hard coded the name of the sheet I was working with 'Data' - so you'll need to change that for your sheet.
 
 # TODO
 
