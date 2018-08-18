@@ -21,4 +21,5 @@ You want to extend the WebScraper class because it has the functionality to pull
  
 Current output:
 ![alt text](https://media.discordapp.net/attachments/475254258216861696/480450780965371905/e2fc125062bde51e75b766bd0c0d4982.png)
+![alt_text](https://i.gyazo.com/47221eb4d772da2c651c753002ed12d0.png)
 
