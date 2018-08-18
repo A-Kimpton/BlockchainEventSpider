@@ -17,7 +17,7 @@ It can be easily expanded on:
  
  # Notes
  
-You want to extend the WebScraper class because it has the functionality to pull info from the page, and calls the right functions when WebScraper.run() is executed. You should only worry about the 2 functions you need to override.
+You want to extend the WebScraper class because it has the functionality to pull info from the page, and calls the right functions when WebScraper.run() is executed. You should only worry about the 2 functions you need to override. You can see my example of Meetup - which is how I scrap from meetup.com
  
 Current output:
 ![alt text](https://media.discordapp.net/attachments/475254258216861696/480450780965371905/e2fc125062bde51e75b766bd0c0d4982.png)
